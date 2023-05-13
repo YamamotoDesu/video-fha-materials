@@ -111,10 +111,14 @@ class Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Colors.white,
+    return Hero(
+      tag: 'background-$recipeName',
+      transitionOnUserGestures: true,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Colors.white,
+        ),
       ),
     );
   }
@@ -134,9 +138,13 @@ class RecipeImage extends StatelessWidget {
 
     return Container(
       padding: isLandscape ? null : const EdgeInsets.only(top: 16),
-      child: Image.asset(
-        imagePath,
-        height: recipeImageHeight,
+      child: Hero(
+        tag: 'recipe-$imagePath',
+        transitionOnUserGestures: true,
+        child: Image.asset(
+          imagePath,
+          height: recipeImageHeight,
+        ),
       ),
     );
   }

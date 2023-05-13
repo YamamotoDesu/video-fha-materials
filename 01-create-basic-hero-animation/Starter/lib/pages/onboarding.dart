@@ -37,7 +37,6 @@
 
 import 'package:flutter/material.dart';
 
-import '../widgets/fade_route.dart';
 import 'recipes.dart';
 
 class Onboarding extends StatelessWidget {

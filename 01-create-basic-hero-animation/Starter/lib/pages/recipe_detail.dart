@@ -204,9 +204,13 @@ class HeroRecipeImage extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
     final recipeImageHeight = screenHeight * 0.25;
-    return Image.asset(
-      imagePath,
-      height: recipeImageHeight,
+    return Hero(
+      tag: 'recipe-$imagePath',
+      transitionOnUserGestures: true,
+      child: Image.asset(
+        imagePath,
+        height: recipeImageHeight,
+      ),
     );
   }
 }
@@ -221,10 +225,14 @@ class HeroBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(0),
-        color: Colors.white,
+    return Hero(
+      tag: 'background-${recipe.name}',
+      transitionOnUserGestures: true,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(0),
+          color: Colors.white,
+        ),
       ),
     );
   }
