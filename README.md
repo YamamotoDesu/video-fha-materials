@@ -9,3 +9,11 @@ Each edition has its own branch, named `versions/[VERSION]`. The default branch 
 | Branch                                                                                  | Version | Release Date |
 | --------------------------------------------------------------------------------------- |:-------:|:------------:|
 | [versions/2.0](https://github.com/kodecocodes/video-fha-materials/tree/versions/2.0) | 2.0     | 2023-04-04   |
+
+## Notes: 01. Create a Basic Hero Animation
+
+https://github.com/YamamotoDesu/video-fha-materials/assets/47273077/2343c6eb-8fed-4bdc-ac0d-3a4b14db6a17
+
+
+
+
